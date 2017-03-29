@@ -1,0 +1,11 @@
+{
+  "name": "solarjob",
+  "private": "true",
+  "dependencies": {
+    "lodash": "~4.16.2",
+    "font-awesome": "~4.6.3",
+    "angular": "~1.5.8",
+    "bootstrap": "^3.3.7",
+    "socket.io-client": "^1.7.2"
+  }
+}

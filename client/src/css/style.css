@@ -1,0 +1,94 @@
+html,
+body,
+.view {
+    height: 100%;
+}
+
+/* Navigation*/
+
+.preloader {
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: block;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    background-color: #fff;
+}
+
+.preloader span {
+    margin-top: 50%;
+    display: flex;
+    justify-content: center;
+    color: #292b2c;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+#navbarNav > ul.navbar-nav.ml-auto.nav-flex-icons > li > span {
+    color: #fff;
+}
+
+.scrolling-navbar {
+    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+
+.top-nav-collapse {
+    background-color: #00afec;
+}
+
+footer.page-footer {
+    background-color: #00afec;
+    margin-top: 2rem;
+}
+
+/*Call to action*/
+
+.flex-center {
+    color: #fff;
+}
+
+#home.view {
+    background: url("../images/header.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*Contact section*/
+
+#contact .fa {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1C2331;
+}
+
+.feature-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-image > i {
+    padding-top: 10px;
+    width: initial;
+    display: block;
+}
+
+.download {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    z-index: 999;
+}

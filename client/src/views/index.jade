@@ -1,0 +1,35 @@
+doctype html
+html(lang='en', ng-app="app")
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title Solarjob showcase
+
+    link(href='libs/lib.css', rel='stylesheet')
+    link(href='css/style.css', rel='stylesheet')
+
+  body
+    .container
+      .row
+        .col-md-9.col-md-push-3(ng-controller="videoCtrl")
+          .jumbotron
+            .container
+              h1 {{name || ' video not selected'}}
+              video(autoplay)
+
+        .col-md-3.col-md-pull-9(ng-controller="videoListCtrl")
+          ul.list-group(ng-repeat="item in items track by $index")
+            li.list-group-item(ng-click="$root.play(item.name)") # {{$index+1}} {{item.name}}
+
+
+      hr
+      footer
+        p © 2017 Company, Inc.
+
+
+
+    script(type='text/javascript', src='libs/lib.js')
+    script(type='text/javascript', src='js/app.js')
