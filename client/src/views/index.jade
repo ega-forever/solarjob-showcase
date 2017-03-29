@@ -19,6 +19,7 @@ html(lang='en', ng-app="app")
             .container
               h1 {{name || ' video not selected'}}
               video(autoplay)
+              h2(id="preloader" hidden) loading...
 
         .col-md-3.col-md-pull-9(ng-controller="videoListCtrl")
           ul.list-group(ng-repeat="item in items track by $index")

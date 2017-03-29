@@ -21,10 +21,12 @@ angular.module('app', [])
       let blob = new Blob([new Uint8Array(chunks)], {type: 'video/mp4'});
       let player = document.querySelector('video');
       player.src = URL.createObjectURL(blob);
+      document.getElementById('preloader').hidden = true;
     });
 
     $rootScope.play = (name)=>{
       $scope.name = name;
+      document.getElementById('preloader').hidden = false;
       let player = document.querySelector('video');
       player.pause();
       player.remove();
