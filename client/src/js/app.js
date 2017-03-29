@@ -3,7 +3,7 @@
  */
 angular.module('app', [])
   .run(($rootScope)=> {
-    $rootScope.io = io('http://localhost:8080');
+    $rootScope.io = io('/');
     $rootScope.io.emit('list');
   })
 
